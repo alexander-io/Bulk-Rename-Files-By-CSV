@@ -59,8 +59,7 @@ if f.mode == "r":
             new_path = "_".join(new_path) # join them via underlines
             new_path_with_ext = new_path + ext # add extension onto new path
             try:
-                print(old_path)
-                shutil.copy('./media_collection/'+old_path,'./new_media_collection/'+new_path_with_ext) # copy to new_media_collection directory
+                shutil.copy('./media_collection/'+old_path,'./new_media_collection/'+new_path_with_ext.lower()) # copy to new_media_collection directory
                 print(old_path +" -> "+ new_path_with_ext)
             except FileNotFoundError as e:
                 print(e)
