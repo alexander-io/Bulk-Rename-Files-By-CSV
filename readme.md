@@ -9,14 +9,8 @@
  where the unnamed media is contained in './media_collection/',  
  where there is an empty directory named './new_media_collection' which is the target for the renamed files  
 
- .  
- ├── media_collection  
- │   ├── 000.mp4  
- │   ├── 001.mp4  
- │   └── 002.mp4  
- ├── new_media_collection  
- ├── table.csv  
- └── x.py  
+ ![first](readme_images/first.png)
+
 
  the table.csv file maps the old file identifiers to the new ones  
  for each file/row in column A there is an absolute path to the video file yet to be named  
@@ -24,17 +18,7 @@
  for each file/row in column B there is a new identifier for each filename that is space separated  
    for example : 'bench press'  
    for example : 'squat'  
-  
+
  running this script, x.py, will copy the file contents of media_collection and rename them according to the map defined in table.csv, the output looks something like the structure below :  
-  
- .  
- ├── media_collection  
- │   ├── 000.mp4  
- │   ├── 001.mp4  
- │   └── 002.mp4  
- ├── new_media_collection  
- │   ├── overhead_press.mp4  
- │   ├── squat.mp4  
- │   └── alternating_lounge.mp4  
- ├── table.csv  
- └── x.py  
+
+ ![second](readme_images/second.png)
