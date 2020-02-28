@@ -22,3 +22,6 @@
  running this script, x.py, will copy the file contents of media_collection and rename them according to the map defined in table.csv, the output looks something like the structure below :  
 
  ![second](readme_images/second.png)
+
+run the script with a command line parameter to add a prefix to the output csv file
+$ python3 x.py fb
